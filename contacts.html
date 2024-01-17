@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contacts</h1>
+
+    <!-- Tables -->
+    <table width="50%" border="2">
+        <thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1+1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Большая ячейка</td>
+            </tr>
+            <tr>
+                <td colspan="3">Три ячейки</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <!-- tables -->
+
+
+
+
+
+
+    <!-- Forms -->
+    <h1>Формы</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>User information</legend>
+            <label for="username">Your Name:</label>
+            <input type="text" name="username" id="username">
+
+            <label for="surname">Your Surame:</label>
+            <input type="text" name="surname" id="surname">
+
+            <label for="date">Your date of birth:</label>
+            <input type="date" name="date" id="date">
+        </fieldset>
+
+        <fieldset>
+            <legend>User password</legend>
+            <label for="pass">Type your password:</label>
+            <input type="password" name="pass" id="pass">
+            <label for="pass-repeat">Type your password:</label>
+            <input type="password" name="pass-repeat" id="pass-repeat" pattern=([A-z])+([0-9])+([\!,\_\@])>
+        </fieldset>
+
+        <fieldset disabled>
+            Ваша любимая марка авто: <br>
+            <input type="radio" name="user_select" id="user_select1" value="audi">
+            <label for="user_select1">Audi</label><br>
+
+            <input type="radio" name="user_select" id="user_select2" value="ford">
+            <label for="user_select1">Ford</label><br>
+
+            <input type="radio" name="user_select" id="user_select3" value="BMW">
+            <label for="user_select1">BMW</label><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="job">Выберите профессию:</label>
+            <select name="job" id="">
+                <option value="-">-</option>
+                <option value="программист">программист</option>
+                <option value="бухгалтер">бухгалтер</option>
+                <option value="преподаватель" selected>преподаватель</option>
+            </select>
+            <div>
+                <label> ВАше место работы:</label><br>
+                <input type="date" name="" placeholder="Дата начала">
+                -
+                <input type="date" name="" placeholder="Дата увольнения">
+                -
+                <input type="date" name="" placeholder="Должность">
+                -
+            </div>
+        </fieldset>
+
+        А<fieldset>
+            <label>Ваша биография:</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+            <label>Ваша фото:</label><br>
+            <input type="file" name="avater" id="avatar">
+        </fieldset>
+
+        <input type="submit" value="Сохранить">
+        <input type="reset" value="Очистить форму">
+
+        <input type="number" name="number" id="" max="100" min="0" step="5">
+        <input type="range" name="number2" id="" max="100" min="0" step="5">
+
+
+    </form>
+
+
+
+    <!-- Формы2 -->
+    <h1>Forms</h1>
+
+    <form action="" method="">
+        <fieldset>
+            <legend>User information</legend>
+            <label for="username">Your name:</label>
+            <input type="text" name="username" id="username" maxlength="15" minlength="2" required><br>
+
+            <label for="surname">Your surname:</label>
+            <input type="text" name="surname" id="surrname" required><br>
+
+            <label for="date">Your date of birth:</label>
+            <input type="date" name="date" id="date">
+        </fieldset>
+
+        <fieldset>
+            <legend>User password</legend>
+            <label for="pass">Type your password:</label>
+            <input type="password" name="pass" id="pass" pattern="([A-z])+([0-9])">
+
+            <label for="pass-repeat">Repeat your password:</label>
+            <input type="password" name="pass-repeat" id="pass-repeat" required>
+        </fieldset>
+
+        <fieldset>
+            Your favourite car: <br>
+            <input type="radio" name="user_select" id="userselect1" value="Audi">
+            <label for="userselect1">Audi</label>
+
+            <input type="radio" name="user_select" id="userselect2" value="Ford">
+            <label for="userselect2">Ford</label>
+
+            <input type="radio" name="user_select" id="userselect3" value="BMW">
+            <label for="userselect3">BMW</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="job">Select your job:</label>
+            <select name="job" id="job">
+                <option value="-">-</option>
+                <option value="Programmer">Programmer</option>
+                <option value="Teacher">Teacher</option>
+                <option value="CEO">CEO</option>
+            </select>
+
+            <div>
+                <label>Your last work:</label>
+                <input type="date" name="" placeholder="First day">
+                -
+                <input type="date" name="" placeholder="Last day">
+                -
+                <input type="text" name="" placeholder="Job">
+                <button>+ Add</button>
+            </div>
+
+            <fieldset>
+                <label for="Bio">Your Bio:</label> <br>
+                <textarea name="Bio" id="Bio" cols="30" rows="10">
+         </textarea><br>
+                <label for="Avatar">Your foto:</label>
+                <input type="file" name="Avatar" id="Avatar" accept="image/*" multiple>
+            </fieldset>
+
+            <input type="submit" value="Save">
+            <input type="reset" value="Clear">
+        </fieldset>
+
+        <input type="number" name="Number" id="" max="100" min="1" step="1">
+
+        <input type="range" name="Range" id="" max="100" min="1" step="1">
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
