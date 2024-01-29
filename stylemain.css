@@ -19,7 +19,7 @@ nav {
     width: 500px;
     background-color: rgb(253, 207, 234);
     border: 3px solid rgb(250, 72, 218);
-    margin: 10px 20px 30px 40px;
+    padding: 5px 10px;
     margin: 0 auto;
     
 }
