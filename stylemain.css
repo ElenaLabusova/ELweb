@@ -25,11 +25,12 @@ nav {
 }
 .item {
     float: left;
-    margin: 10px 25px;
+    width: calc(100%/6);
 }
 .imageDiv{
     float: left;
     margin: 20px;
+   
 }
 main{
 background-color: rgb(251, 243, 233);
