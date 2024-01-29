@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.container {
+    outline: 5px solid chartreuse;
+    height: 1000px;
+display: flex;
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+/* flex-direction: row-reverse; */
+flex-wrap: wrap;
+/* align-content: space-around; */
+align-items: center;
+justify-items: center;
+justify-content: center;
+gap: 10px;
+
+
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 2px solid crimson;
+    /* чтобы текст был по центру */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+   
+}
+.self{
+    background-color: bisque;
+    align-self: baseline;
+}
+</style>
+
+</head>
+<body>
+    
+    <h1>Flex Box</h1>
+
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box self">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+        <div class="box">3</div>
+       
+       
+    </div>
+</body>
+</html>
