@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-image: linear-gradient(30deg, #ff6e02,#ffff00 ,#ff6e02);
+            background-image: radial-gradient(30deg, #ff6e02,#ffff00 ,#ff6e02);
+
+        }
+        .container{
+            /* outline:5px solid green;   */
+            height: 100vh;
+            display: grid;
+            gap:10px;
+            grid-template-columns: 2fr 2fr 4fr 4fr 4fr 4fr 2fr 2fr;
+            grid-template-rows: 1fr 10fr 2fr;
+
+
+            grid-template-areas:
+            "header header header header header header header header"
+            "left left centerPanel centerPanel centerPanel centerPanel right right"
+            "footer footer footer footer footer footer footer footer"
+        }
+
+
+
+
+        .header{
+            grid-area: header;
+        }
+        .left{
+            grid-area: left;
+        }
+        .centerPanel{
+            grid-area: centerPanel;
+        }
+        .rightPanel{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        .container div{
+            /* background-color: beige; */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+
+
+      <div class="container">
+            <div class="header">Header</div>
+            <div class="left">Left Panel</div>
+            <div class="centerPanel">Center Panel</div>
+            <div class="rightPanel">Right Panel</div>
+            <div class="footer">Footer</div>
+      </div>  
+</body>
+</html>
